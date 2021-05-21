@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "710918303516",
+    "firebase_url": "https://taxifgo-6de61-default-rtdb.firebaseio.com",
+    "project_id": "taxifgo-6de61",
+    "storage_bucket": "taxifgo-6de61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710918303516:android:c34a95810d0749d61254d9",
+        "android_client_info": {
+          "package_name": "com.taxifgo.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710918303516-akvkv3p8nml5cpkhkojq30f39vik0cl3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuI0hnBR64jMsz-d8ejK-K89-hOIkA6Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710918303516-akvkv3p8nml5cpkhkojq30f39vik0cl3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710918303516:android:d7c9ea28c3120f041254d9",
+        "android_client_info": {
+          "package_name": "com.taxifgo.passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710918303516-akvkv3p8nml5cpkhkojq30f39vik0cl3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuI0hnBR64jMsz-d8ejK-K89-hOIkA6Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710918303516-akvkv3p8nml5cpkhkojq30f39vik0cl3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

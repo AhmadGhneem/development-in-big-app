@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="5dp"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+
+    <LinearLayout
+
+        android:id="@+id/offerArea"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@+id/cardArea"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="-25dp"
+
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:background="@drawable/bottom_all_curve_card"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/offerImage"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/_6sdp"
+
+            app:srcCompat="@drawable/ic_discount" />
+
+        <com.view.MTextView
+            android:id="@+id/offerTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:ellipsize="marquee"
+            android:gravity="start|center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Knight Food.com"
+            android:textAllCaps="false"
+
+            android:textColor="@color/offerColor"
+            android:textSize="@dimen/_11ssp"
+            app:customTypeFace="@string/systemMediumFont"></com.view.MTextView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/cardArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_left1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            app:cardBackgroundColor="@color/view_gray_back"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="1dp"
+            app:cardMaxElevation="0dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/resStatusTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:gravity="start|center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_12"
+                    android:visibility="gone"
+                    app:customTypeFace="@string/robotobold"></com.view.MTextView>
+
+                <LinearLayout
+                    android:id="@+id/restaurantAdptrLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="186dp">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/imgView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                app:sriv_oval="false" />
+
+                            <ImageView
+                                android:id="@+id/favImage"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:src="@drawable/ic_heart"
+                                android:visibility="gone" />
+
+                            <com.like.LikeButton
+
+                                android:id="@+id/likeButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:clickable="false"
+                                android:visibility="gone"
+                                app:anim_scale_factor="1.8"
+                                app:icon_size="15dp"
+                                app:icon_type="heart"
+                                app:like_drawable="@drawable/heart_on_fav_store"
+                                app:unlike_drawable="@drawable/heart_off_fav_store" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="-8dp"
+                        android:layout_marginTop="0dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_curve_card"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <com.view.MTextView
+                                android:id="@+id/restaurantNameTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp"
+                                app:customTypeFace="@string/systemMediumFont"></com.view.MTextView>
+
+
+                        </LinearLayout>
+
+                        <com.view.MTextView
+                            android:id="@+id/RestCuisineTXT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textColor="#646464"
+                            android:textSize="@dimen/_10ssp"
+                            app:customTypeFace="@string/systemLightFont"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout22" />
+
+                        <com.view.MTextView
+                            android:id="@+id/pricePerPersonTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text=""
+                            android:textColor="#646464"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="normal"
+                            app:customTypeFace="@string/systemLightFont"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/RestCuisineTXT" />
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect_rounded_corner_blue_light"
+                            android:orientation="horizontal"
+                            android:paddingStart="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout20"
+                            app:layout_constraintTop_toBottomOf="@+id/pricePerPersonTxt">
+
+                            <com.view.MTextView
+                                android:id="@+id/minOrderTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:fontFamily="@font/cairo"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#2B2B2B"
+                                android:textSize="@dimen/_8ssp"
+                                android:textStyle="normal"
+                                app:customTypeFace="@string/systemSemiBold" />
+
+                            <com.view.MTextView
+                                android:id="@+id/minOrderLBLTxt"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="-5dp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#646464"
+                                android:textSize="@dimen/_8ssp"
+                                android:textStyle="normal"
+                                app:customTypeFace="@string/systemLightFont" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect_rounded_corner_blue_light"
+                            android:orientation="horizontal"
+                            android:paddingStart="8dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pricePerPersonTxt">
+
+                            <ImageView
+                                android:id="@+id/timerImage"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="start|center"
+                                app:srcCompat="@drawable/ic_express_delivery_1" />
+
+                            <com.view.MTextView
+                                android:id="@+id/deliveryTimeTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="@font/cairo"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text=""
+                                android:textColor="#2B2B2B"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="normal"
+                                app:customTypeFace="@string/robotobold"
+                                app:fontFamily="@font/cairo"></com.view.MTextView>
+
+                            <com.view.MTextView
+                                android:id="@+id/deliveryLBLTimeTxt"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="@font/cairo"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text=""
+                                android:textColor="#646464"
+                                android:textSize="@dimen/_8ssp"
+                                android:textStyle="normal"
+                                app:fontFamily="@font/cairo"></com.view.MTextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/restaurantRateView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/rect_rounded_corner_blue_light"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pricePerPersonTxt">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_star_black_24dp" />
+
+                            <com.view.MTextView
+                                android:id="@+id/restaurantRateTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cairo"
+                                android:gravity="center"
+                                android:text="4.4"
+                                android:textColor="@color/Darkblack"
+                                android:textSize="@dimen/_10ssp"
+                                android:textStyle="normal"
+                                app:customTypeFace="@string/systemLightFont" />
+
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

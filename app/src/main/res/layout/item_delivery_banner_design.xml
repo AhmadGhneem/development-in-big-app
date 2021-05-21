@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <View
+        android:id="@+id/seperatorView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/category_banner_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/category_banner_left_right_margin"
+        android:layout_marginBottom="5dp"
+        android:background="#E4E4E4"
+        android:visibility="gone" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/category_banner_left_right_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/category_banner_left_right_margin"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="-8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bannerAreaContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.view.SelectableRoundedImageView
+                android:id="@+id/bannerImgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#adadad"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_no_icon"
+                app:sriv_left_bottom_corner_radius="5dp"
+                app:sriv_left_top_corner_radius="5dp"
+                app:sriv_right_bottom_corner_radius="5dp"
+                app:sriv_right_top_corner_radius="5dp" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bannerImgView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/bannerImgView"
+                app:srcCompat="@drawable/gradient" />
+
+            <com.view.MTextView
+                android:id="@+id/serviceNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="17dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/cairo"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:maxWidth="250dp"
+                android:maxLines="2"
+                android:paddingStart="10dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp"
+                android:text="Book Now"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.view.MTextView
+                android:id="@+id/bookNowTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:background="@color/appThemeColor_2"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp"
+                android:text="Book Now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_16"
+                android:visibility="gone" />
+
+            <ImageView
+
+                android:id="@+id/bookNowImg"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/_9sdp"
+
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_book_now" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

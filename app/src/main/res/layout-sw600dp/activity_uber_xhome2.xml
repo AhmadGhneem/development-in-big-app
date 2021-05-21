@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!-- edit cardview its here -->
+
+
+    <FrameLayout
+        android:id="@+id/fragContainerone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="60dp"
+            android:text="What would you like to do today ?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="96dp"/>
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="200dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/iconcar"
+                    android:layout_marginTop="2dp"
+                                     />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icontaxi"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icontaxi"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icontaxi"
+                    android:layout_marginTop="2dp"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icontaxi"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icontaxi"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+       </GridLayout>
+    </FrameLayout>
+
+   
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/rduTopArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-6dp"
+        android:layout_marginEnd="-6dp"
+        android:background="@drawable/shadow_white_bottom"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/homeArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/home_img"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:tint="@color/accent_blue"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <com.view.MTextView
+                    android:id="@+id/homeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxLines="4"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="@dimen/_8sdp"
+                    app:customTypeFace="@string/systemMediumFont" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/historyArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bookingImg"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:tint="@color/homedeSelectColor"
+                    app:srcCompat="@drawable/ic_booking" />
+
+                <com.view.MTextView
+                    android:id="@+id/historyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxLines="4"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/homedeSelectColor"
+                    android:textSize="@dimen/_8sdp"
+                    app:customTypeFace="@string/systemMediumFont" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/walletArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/walletImg"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+
+                    android:tint="@color/homedeSelectColor"
+                    app:srcCompat="@drawable/ic_wallet" />
+
+                <com.view.MTextView
+                    android:id="@+id/walletTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxLines="4"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/homedeSelectColor"
+                    android:textSize="@dimen/_8sdp"
+                    app:customTypeFace="@string/systemMediumFont" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profileArea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profileImg"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:tint="@color/homedeSelectColor"
+                    app:srcCompat="@drawable/ic_profile" />
+
+                <com.view.MTextView
+                    android:id="@+id/profileTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxLines="4"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/homedeSelectColor"
+                    android:textSize="@dimen/_8sdp"
+                    app:customTypeFace="@string/systemMediumFont" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="4"
+        >
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start"
+            app:bt_active="true"
+            app:bt_colorActive="@color/primary_color_blue"
+            app:bt_colorInactive="@color/gray_holo_dark"
+            app:bt_icon="@drawable/ic_home"
+            app:bt_shape="@drawable/nav_rounded_corner_gray"
+            app:bt_title="@string/home"
+
+
+
+            />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/primary_color_blue"
+            app:bt_colorInactive="@color/gray_holo_dark"
+            app:bt_icon="@drawable/ic_booking"
+            app:bt_shape="@drawable/nav_rounded_corner_gray"
+            app:bt_title="@string/booking" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/primary_color_blue"
+            app:bt_colorInactive="@color/gray_holo_dark"
+            app:bt_icon="@drawable/ic_wallet"
+            app:bt_shape="@drawable/nav_rounded_corner_gray"
+            app:bt_title="@string/wallet" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/primary_color_blue"
+            app:bt_colorInactive="@color/gray_holo_dark"
+            app:bt_icon="@drawable/ic_profile"
+            app:bt_shape="@drawable/nav_rounded_corner_gray"
+            app:bt_title="@string/profile" />
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+
+</LinearLayout>

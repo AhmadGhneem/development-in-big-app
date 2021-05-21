@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaxiFGO</string>
+    <string name="home">الرئيسية</string>
+    <string name="booking">الحجوزات</string>
+    <string name="wallet">المحفظة</string>
+    <string name="profile">الملف الشخصي</string>
+</resources>
